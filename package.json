@@ -1,0 +1,22 @@
+{
+  "name": "rekeys",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.0.0-beta.5",
+    "react-dom": "^16.0.0-beta.5",
+    "reason-scripts": "0.6.7"
+  },
+  "scripts": {
+    "start": "FORCE_COLOR=true react-scripts start | cat -n",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "npm link bs-platform"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.1.0",
+    "prettier": "^1.5.3",
+    "reason-react": "^0.2.3"
+  }
+}

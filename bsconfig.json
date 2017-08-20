@@ -1,0 +1,10 @@
+{
+  "name": "reason-scripts",
+  "sources": ["src"],
+  "bs-dependencies": ["reason-react", "bs-jest"],
+  "bs-dev-dependencies": ["bs-jest"],
+  "bsc-flags": ["-bs-super-errors"],
+  "reason": {
+    "react-jsx": 2
+  }
+}
