@@ -6,9 +6,6 @@ pp.re# dependencies
 # testing
 /coverage
 
-# production
-/build
-
 # bucklescript
 /lib
 /types
