@@ -1,7 +1,7 @@
 # Rekeys
 
 Example [ReasonML](https://reasonml.github.io/) app to find JavaScript event
-keycodes.
+keycodes. Read more about it [here](https://anmonteiro.com/2017/08/shipping-a-very-simplistic-reasonreact-app/).
 
 ## Live version:
 

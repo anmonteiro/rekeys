@@ -51,7 +51,9 @@ let make keyInfo::k=? _children => {
             />
           </a>
           (str " by ")
-          <a href="https://anmonteiro.com/"> (str "anmonteiro") </a>
+          <a href="https://twitter.com/anmonteiro90">
+            (str "@anmonteiro90")
+          </a>
         </p>
       </div>
     </div>
@@ -60,7 +62,7 @@ let make keyInfo::k=? _children => {
 let keyInfoOfEvent: Event.mouseDownEventType => keyInfo =
   fun e => {
     let code =
-      switch (e |> Event.code |> Js_string.splitByRe [%re "/(?=[A-Z0-9])/"]) {
+      switch (e |> Event.code |> Js.String.splitByRe [%re "/(?=[A-Z0-9])/"]) {
       | [|x|] => x
       | [|"Key", x|]
       | [|"Digit", x|] => x
