@@ -61,12 +61,13 @@ rm -rf $DIR
 git clone -b $GIT_MASTER_BRANCH --single-branch $GIT_REPO_REMOTE_URL $MASTER_DIR
 pushd $MASTER_DIR
 
-rm -rf build
 yarn install
 yarn build
 
 mkdir -p $DIR
 git clone -b $GIT_DEPLOY_BRANCH --single-branch $GIT_REPO_REMOTE_URL $DIR
+
+git $GIT_SUBTREE_OPTS rm -r .
 
 rsync -av build/ $DIR
 
