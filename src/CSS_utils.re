@@ -1,1 +1,1 @@
-external requireCSS : string => unit = "require" [@@bs.val];
+[@bs.val] external requireCSS : string => unit = "require";

@@ -4,6 +4,7 @@
   "bs-dependencies": ["reason-react", "bs-jest"],
   "bs-dev-dependencies": ["bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
+  "refmt": 3,
   "reason": {
     "react-jsx": 2
   }

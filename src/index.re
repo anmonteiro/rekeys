@@ -1,16 +1,17 @@
 open Dom_utils;
 
-CSS_utils.requireCSS "./index.css";
+CSS_utils.requireCSS("./index.css");
 
-let init _ =>
-  Document.addEventListener
-    "keydown"
-    (
-      fun e =>
-        ReactDOMRe.renderToElementWithId
-          <App keyInfo=(App.keyInfoOfEvent e) /> "root"
-    );
+let init = (_) =>
+  Document.addEventListener(
+    "keydown",
+    (e) =>
+      ReactDOMRe.renderToElementWithId(
+        <App keyInfo=(App.keyInfoOfEvent(e)) />,
+        "root"
+      )
+  );
 
-init ();
+init();
 
-ReactDOMRe.renderToElementWithId <App /> "root";
+ReactDOMRe.renderToElementWithId(<App />, "root");

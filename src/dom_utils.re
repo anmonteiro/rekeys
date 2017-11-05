@@ -1,12 +1,13 @@
 module Event = {
   type mouseDownEventType;
-  external code : mouseDownEventType => string = "" [@@bs.get];
-  external keyCode : mouseDownEventType => int = "" [@@bs.get];
+  [@bs.get] external code : mouseDownEventType => string = "";
+  [@bs.get] external keyCode : mouseDownEventType => int = "";
 };
 
 module Document = {
   /* hardcoded since we're only using this one */
+  [@bs.val] [@bs.scope "document"]
   external addEventListener :
-    string => (Event.mouseDownEventType => unit) => unit =
-    "" [@@bs.val] [@@bs.scope "document"];
+    (string, Event.mouseDownEventType => unit) => unit =
+    "";
 };
