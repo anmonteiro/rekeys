@@ -13,6 +13,7 @@ pp.re# dependencies
 /lib
 /types
 .merlin
+_esy
 
 # misc
 .DS_Store

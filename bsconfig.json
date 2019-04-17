@@ -1,11 +1,16 @@
 {
   "name": "reason-scripts",
-  "sources": ["src"],
-  "bs-dependencies": ["reason-react", "bs-jest"],
-  "bs-dev-dependencies": ["bs-jest"],
-  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    "src"
+  ],
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
   "refmt": 3,
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   }
 }

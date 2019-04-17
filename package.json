@@ -3,21 +3,28 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "reason-scripts": "0.7.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reason-scripts": "1.0.0",
+    "reason-react": "0.7.0"
   },
   "scripts": {
     "start": "FORCE_COLOR=true react-scripts start | cat -n",
+    "clean": "bsb -clean-world",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "npm link bs-platform"
   },
   "devDependencies": {
-    "bs-jest": "0.1.0",
     "prettier": "1.6.1",
-    "reason-react": "0.2.4"
+    "bs-platform": "beta-4.6"
   },
-  "homepage": "http://anmonteiro.com/rekeys"
+  "homepage": "http://anmonteiro.com/rekeys",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
